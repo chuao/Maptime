@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>The little map experiment</title>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    <style>
+      #map {height: 100%;}
+    </style>
+  </head>
+  <body>
+    <div id="map">
+    
+     
+      
+    </div>
+  </body>
+  <script>
+    var map1 = L.map('map');
+    map1.setView([51.053,-114.095], 13);
+    var layer = L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg');
+    layer.addTo(map1);
+  </script>
+</html>
