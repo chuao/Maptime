@@ -37,7 +37,7 @@
         fillOpacity: 0.8
     };
 
-    L.geoJson(mywells, {
+    L.geoJson(mywells.toGeoJSON(), {
         pointToLayer: function (feature, latlng) {
         return L.circleMarker(latlng, geojsonMarkerOptions);
     }
